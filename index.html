@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Malunggay Pandesal | Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        .hero-section {
+            background-color: whitesmoke;
+            padding: 60px 15px; 
+            text-align: center;
+        }
+        
+        .navbar { 
+            border-radius: 0; 
+            margin-bottom: 0; 
+            background-color: forestgreen; 
+            border: none;
+        }
+        
+        .navbar-default .navbar-brand, 
+        .navbar-default .navbar-nav > li > a {
+            color: white !important;
+        }
+
+        .navbar-default .navbar-toggle {
+            border-color: white;
+        }
+
+        .navbar-default .navbar-toggle .icon-bar {
+            background-color: white;
+        }
+
+        footer { 
+            padding: 30px 15px; 
+            background-color: black; 
+            color: white; 
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .student-animation {
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .feature-item {
+            padding: 30px;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .feature-item:hover {
+            background-color: lightgray;
+            border-radius: 10px;
+            transform: scale(1.02);
+        }
+
+        #myBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 20px;
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 24px;
+            }
+            .hero-section p {
+                font-size: 14px;
+            }
+            .feature-item {
+                padding: 10px;
+                border-bottom: 1px solid silver;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Malunggay Pandesal Project</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="hero-section">
+    <div class="container student-animation">
+        <h1 style="color: darkgreen; font-weight: bold;">Freshly Baked Malunggay Pandesal</h1>
+        <p class="lead">Healthy and delicious bread for your breakfast. Made fresh every day!</p>
+        <p><a class="btn btn-success btn-lg" href="shop.html" role="button" style="background-color: seagreen; border-color: green;">Order Now!</a></p>
+    </div>
+</div>
+
+<div class="container" style="padding: 20px 0;">
+    <div class="row">
+        <div class="col-sm-4 text-center feature-item">
+            <span class="glyphicon glyphicon-leaf" style="font-size: 50px; color: green;"></span>
+            <h3 style="color: darkolivegreen;">Organic</h3>
+            <p>We use real malunggay leaves for better health.</p>
+        </div>
+        <div class="col-sm-4 text-center feature-item">
+            <span class="glyphicon glyphicon-fire" style="font-size: 50px; color: orange;"></span>
+            <h3 style="color: darkolivegreen;">Hot & Fresh</h3>
+            <p>Straight from the oven to your table.</p>
+        </div>
+        <div class="col-sm-4 text-center feature-item">
+            <span class="glyphicon glyphicon-thumbs-up" style="font-size: 50px; color: royalblue;"></span>
+            <h3 style="color: darkolivegreen;">Affordable</h3>
+            <p>Quality bread that fits your budget.</p>
+        </div>
+    </div>
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<footer class="text-center">
+    <div class="container">
+        <p>&copy; 2024 Web Programming Project</p>
+        <p>Submitted by: <strong>Villanueva, Jay-m O.</strong></p>
+        <p>Section: BSIT-2A</p>
+    </div>
+</footer>
+
+<script>
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        mybutton.style.display = "block";
+      } else {
+        

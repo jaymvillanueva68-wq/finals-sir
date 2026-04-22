@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shop - Malunggay Pandesal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        .navbar { 
+            border-radius: 0; 
+            margin-bottom: 0; 
+            background-color: forestgreen; 
+            border: none;
+        }
+        
+        .navbar-default .navbar-brand, 
+        .navbar-default .navbar-nav > li > a {
+            color: white !important;
+        }
+
+        .navbar-default .navbar-toggle {
+            border-color: white;
+        }
+
+        .navbar-default .navbar-toggle .icon-bar {
+            background-color: white;
+        }
+
+        .page-header {
+            border-bottom: 2px solid seagreen;
+            margin-top: 30px;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .shop-animation {
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .thumbnail {
+            transition: 0.3s;
+            border: 1px solid silver;
+        }
+
+        .thumbnail:hover {
+            box-shadow: 0px 4px 15px gray;
+            transform: scale(1.03);
+        }
+
+        .btn-success {
+            background-color: seagreen;
+            border-color: green;
+        }
+
+        .btn-success:hover {
+            background-color: darkgreen;
+        }
+
+        footer { 
+            padding: 30px 15px; 
+            background-color: black; 
+            color: white; 
+            margin-top: 40px;
+        }
+
+        #myBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 20px;
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .thumbnail img {
+                width: 100%;
+                height: auto;
+            }
+            .caption h3 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Malunggay Pandesal Project</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container shop-animation">
+    <div class="page-header">
+        <h1 style="color: darkgreen;">Our Menu <small style="color: olive;">Fresh items available today</small></h1>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="OIP.jpg" alt="Spanish Bread" style="height: 200px; width: 100%; object-fit: cover;">
+                <div class="caption text-center">
+                    <h3 style="color: darkolivegreen;">Spanish Bread</h3>
+                    <p>Spanish bread is a popular 'merienda' in the Philippines with a sweet buttery filling!</p>
+                    <p><strong style="color: red;">$3.50</strong></p>
+                    <p><a href="#" class="btn btn-success" role="button">Add to Cart</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="OIP (1).jpg" alt="Putok" style="height: 200px; width: 100%; object-fit: cover;">
+                <div class="caption text-center">
+                    <h3 style="color: darkolivegreen;">Putok</h3>
+                    <p>Star Bread, or Putok, is a sweet, dense bread that is a Filipino Panederia favorite.</p>
+                    <p><strong style="color: red;">$4.00</strong></p>
+                    <p><a href="#" class="btn btn-success" role="button">Add to Cart</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="OIP (2).jpg" alt="Ensaymada" style="height: 200px; width: 100%; object-fit: cover;">
+                <div class="caption text-center">
+                    <h3 style="color: darkolivegreen;">Ensaymada</h3>
+                    <p>Discover the secret to soft, fluffy ensaymada with this easy recipe inspired by traditions.</p>
+                    <p><strong style="color: red;">$7.00</strong></p>
+      
